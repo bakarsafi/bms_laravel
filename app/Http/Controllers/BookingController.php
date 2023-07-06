@@ -27,6 +27,8 @@ class BookingController extends Controller
             'vehicle_id'=> 'required',
         ]);
 
+
+
         if ($validator->fails()) {
             return response()->json(['errors' => $validator->errors()], 400);
         }
